@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #243648;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.error{
+    color: rgb(255, 234, 46);
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+
+/* header */
+.header{
+    padding: 20px;
+}
+.header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header ul li a{
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+.header ul li a:hover,
+.nav-active{
+    background-color: #3687d8;
+}
+
+
+/* main */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+/* form */
+.heading{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+form{
+    width: 18.75rem;
+    background: #2f465e;
+    padding: 20px;
+    border-radius: 4px;
+}
+form input, form textarea{
+    width: 100%;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #0e151c;
+}
+input[type=submit]{
+    background-color: #3687d8;
+    color: #243648;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* comments */
+.comment{
+    width: 18.75rem;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    margin: 5px 0;
+    border-radius: 4px;
+    color: #0e151c;
+}
+.comment > span{
+    color: #2f465e;
+    font-size: 0.75rem;
+}
+.pagination_btn{
+    width: 18.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.pagination_btn a{
+    background-color: #3687d8;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: whitesmoke;
+}
+
+.about{
+    width: 18.75rem;
+    color: whitesmoke;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+/* footer */
+.footer{
+    display: grid;
+    place-items: center;
+    color: rgba(245, 245, 245, 0.651);
+    padding: 20px 0;
+}
+
+
+/* responsive */
+@media screen and (min-width: 700px) {
+    .comment, .about, form, .pagination_btn{
+        width: 25rem;
+    }
+}
